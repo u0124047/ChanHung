@@ -60,6 +60,7 @@
       </div>
     </div>
     <Footer id="title4"></Footer>
+    <div id=”fb-root”></div>
   </div>
 </template>
 
