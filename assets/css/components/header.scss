@@ -4,6 +4,8 @@
     justify-content: space-between;
     background-color: #f5f5f5;
     flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
     .header_title {
         padding: 10px 34px;
         font-size: 24px;
@@ -21,5 +23,8 @@
                 font-weight: 500;
             }
         }
+    }
+    @media (max-width: 428px) {
+        visibility: hidden;
     }
 }
