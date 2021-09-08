@@ -1,0 +1,142 @@
+.wrapper {
+    .wrap_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .top_view {
+            background-size: cover;
+            background-image: url(~/static/img/image1.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            .top_title {
+                font-size: 30px;
+                font-weight: 700;
+                padding-top: 200px;
+                padding-left: 300px;
+                @media (max-width: 428px) {
+                    padding-top: 50px;
+                    padding-left: 18px;
+                }
+            }
+            .top_message {
+                width: 350px;
+                padding-top: 20px;
+                padding-left: 300px;
+                @media (max-width: 428px) {
+                    padding-left: 18px;
+                }
+            }
+            .tabkeALook_btn {
+                margin-top: 20px;
+                margin-left: 300px;
+                margin-bottom: 200px;
+                background-color: black;
+                color: white;
+                width: 85px;
+                font-size: 10px;
+                font-weight: 500;
+                padding: 9px;
+                @media (max-width: 428px) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .second_view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 300px 100px 300px;
+            background-color: #f5f5f5;
+            @media (max-width: 428px) {
+                padding: 40px 18px;
+            }
+            .sencond_title {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .sencond_message {
+                margin-top: 20px;
+            }
+        }
+        .img_view {
+            .layer0_img {
+                display: flex;
+                height: 550px;
+                @media (max-width: 428px) {
+                    flex-direction: column;
+                }
+                .layer0_left_img {
+                    display: flex;
+                    width: 50%;
+                    height: 100%;
+                    @media (max-width: 428px) {
+                        width: 100%;
+                    }
+                    background-size: cover;
+                    background-image: url(~/static/img/image2.jpg);
+                    background-repeat: no-repeat;
+                }
+                .layer0_right_img {
+                    display: flex;
+                    width: 50%;
+                    height: 85%;
+                    @media (max-width: 428px) {
+                        width: 100%;
+                    }
+                    > div {
+                        @media (max-width: 428px) {
+                            height: 200%;
+                        }
+                        .card {
+                            min-height: 40%;
+                            min-width: 70%;
+                            padding: 10% 15%;
+                            @media (max-width: 428px) {
+                                padding: 5% 15%;
+                                width: 50%;
+                                height: 80%;
+                            }
+                            .card_title {
+                                font-size: 20px;
+                                font-weight: 500;
+                                letter-spacing: 3px;
+                            }
+                            .card_message {
+                                margin-top: 20px;
+                            }
+                            .card_btn {
+                                background-color: black;
+                                color: white;
+                                width: 100px;
+                                padding: 8px;
+                                margin-top: 30px;
+                                font-size: 10px;
+                                font-weight: 500;
+                                text-align: center;
+                            }
+                        }
+                        
+                        .img {
+                            @media (max-width: 428px) {
+                                height: 0;
+                            }
+                            height: 61%;
+                            width: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                        .img:nth-child(1) {
+                            background-image: url(~/static/img/image3.jpg);
+                        }
+                        .img:nth-child(2) {
+                            background-size: contain;
+                            background-image: url(~/static/img/image5.jpg);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
