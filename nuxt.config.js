@@ -8,7 +8,7 @@ export default {
   ...routerBase,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'InteriorDesignWeb',
+    title: '郭庭如 KathyKuo 網頁開發',
     htmlAttrs: {
       lang: 'en'
     },
