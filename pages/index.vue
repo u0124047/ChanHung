@@ -72,5 +72,5 @@ export default {};
 @import "~assets/css/global.min.css";
 @import "~assets/css/components/header.min.css";
 @import "~assets/css/components/footer.min.css";
-@import "~assets/css/InteriorDesignWeb/style.min.css";
+@import "~assets/css/ChanHung/style.min.css";
 </style>
