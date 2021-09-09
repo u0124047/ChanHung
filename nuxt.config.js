@@ -19,6 +19,8 @@ export default {
       { name: 'Description', content: '台南展虹有限公司｜PE再製料｜PE塑膠膜｜PE料買賣' },
       { name: 'format-detection', content: 'telephone=no' },
       { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: 'https://avatars.githubusercontent.com/u/8891260?v=4' },
+      { property: 'og:title', content: '台南展虹有限公司' },
       { property: 'og:description', content: '台南展虹有限公司｜PE再製料｜PE塑膠膜｜PE料買賣' },
       { property: 'og:url', content: 'https://u0124047.github.io/InteriorDesignWeb' },
       { property: 'fb:app_id', content: '223595172974610' }
