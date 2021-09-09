@@ -22,7 +22,8 @@ export default {
       { property: 'og:image', content: 'https://avatars.githubusercontent.com/u/8891260?v=4' },
       { property: 'og:title', content: '台南展虹有限公司' },
       { property: 'og:description', content: '台南展虹有限公司｜PE再製料｜PE塑膠膜｜PE料買賣' },
-      { property: 'og:url', content: 'https://u0124047.github.io/ChanHung' }
+      { property: 'og:url', content: 'https://u0124047.github.io/ChanHung' },
+      { name: 'google-site-verification', content: 'google41ca631478ebd4e8' }
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', sizes: '28x16', href: 'https://avatars.githubusercontent.com/u/8891260?v=4' }
