@@ -32,7 +32,7 @@
             border-radius: 50px;
         }
         > div:nth-child(3) {
-            font-size: 14px;
+            font-size: 26px;
             font-weight: 300;
             line-height: 18px;
             letter-spacing: 0.5px;
@@ -41,7 +41,6 @@
 
     .column {
         padding-right: 60px;
-        width: 20%;
         @media (max-width: 428px) {
             width: 100%;
             margin-left: 0;
@@ -49,19 +48,19 @@
         }
         padding-top: 8px;
         > div:nth-child(1) {
-            font-size: 16px;
+            font-size: 26px;
             font-weight: 500;
             letter-spacing: 4px;
         }
         .content_box {
             > div:nth-child(1) {
                 padding-top: 10px;
-                font-size: 14px;
+                font-size: 26px;
                 line-height: 18px;
             }
             > div:nth-child(2) {
                 
-                font-size: 14px;
+                font-size: 26px;
                 font-weight: 300;
                 line-height: 18px;
                 letter-spacing: 0.5px;
