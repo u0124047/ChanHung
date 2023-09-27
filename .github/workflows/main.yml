@@ -33,6 +33,7 @@ jobs:
       - name: Install & Build # 執行指令
         run: |
           yarn install
+          yarn build
           yarn generate 
       - name: Print Path
         run: |
@@ -45,8 +46,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Settings > Secret 建立的 ACCESS_TOKEN，推同個 repo 的話可以不需要
           BRANCH: gh-pages # deploy 到 gh-pages 這個分支
           FOLDER: dist
-      - name: Print Path2
-        run: |
-          echo "The path2 is: $PWD"  # $PWD contains the current working directory
-          ls
-      
