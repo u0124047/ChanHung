@@ -26,10 +26,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Install & Build # 執行指令
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 16.20.2
+      - name: Install & Build # 執行指令
         run: |
           yarn install
           yarn build 
