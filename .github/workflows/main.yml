@@ -34,7 +34,10 @@ jobs:
         run: |
           yarn install
           yarn build 
-          
+      - name: Print Path
+        run: |
+          echo "The path is: $PWD"  # $PWD contains the current working directory
+    
       # Runs a single command using the runners shell
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
