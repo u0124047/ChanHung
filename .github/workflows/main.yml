@@ -38,14 +38,21 @@ jobs:
         run: |
           echo "The path is: $PWD"  # $PWD contains the current working directory
           ls
-    
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: whoami
       # Runs a single command using the runners shell
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Settings > Secret 建立的 ACCESS_TOKEN，推同個 repo 的話可以不需要
           BRANCH: gh-pages # deploy 到 gh-pages 這個分支
-          
+          FOLDER: dist
       - name: Print Path2
         run: |
           echo "The path2 is: $PWD"  # $PWD contains the current working directory
