@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.20.2
-      - name: Install & Build # 執行指令
+      - name: Install & Build & Deploye # 執行指令
         run: |
           yarn install
           yarn generate:gh-pages
