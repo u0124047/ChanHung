@@ -33,19 +33,11 @@ jobs:
       - name: Install & Build # 執行指令
         run: |
           yarn install
-          yarn build 
+          yarn generate 
       - name: Print Path
         run: |
           echo "The path is: $PWD"  # $PWD contains the current working directory
           ls
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          script: whoami
       # Runs a single command using the runners shell
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
