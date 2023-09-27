@@ -33,8 +33,6 @@ jobs:
       - name: Install & Build # 執行指令
         run: |
           yarn install
-          yarn build
           yarn generate
-          yarn build:gh-pages
           yarn generate:gh-pages
           yarn deploy
